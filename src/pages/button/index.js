@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import Button from '../component/button';
+import Button from '../../component/button';
 
 function ButtonHome(params) {
   return (

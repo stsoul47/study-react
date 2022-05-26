@@ -3,7 +3,7 @@ import { BrowserRouter, Routes, Route, Outlet } from 'react-router-dom';
 /* router: S */
 import ButtonHome from './pages/button';
 import Dashboard from './pages/dashboard';
-
+import InputHome from './pages/input/index';
 /* router: E */
 
 class App extends Component {
@@ -13,6 +13,7 @@ class App extends Component {
         <BrowserRouter>
         <Routes>
           <Route path="/button" element={<ButtonHome />}/>
+          <Route path="/input" element={<InputHome />}/>
           <Route path="/" exact element={<Dashboard />}/>
         </Routes>
       </BrowserRouter>
