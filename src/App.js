@@ -1,10 +1,15 @@
 import React, {Component} from 'react';
 import { BrowserRouter, Routes, Route, Outlet } from 'react-router-dom';
+
 /* router: S */
 import ButtonHome from './pages/button';
+import Counter from './pages/count';
 import Dashboard from './pages/dashboard';
 import InputHome from './pages/input/index';
+
 /* router: E */
+
+
 
 class App extends Component {
   render(){
@@ -15,6 +20,7 @@ class App extends Component {
           <Route path="/button" element={<ButtonHome />}/>
           <Route path="/input" element={<InputHome />}/>
           <Route path="/" exact element={<Dashboard />}/>
+          <Route path="/count" element={<Counter />}/>
         </Routes>
       </BrowserRouter>
       </div>

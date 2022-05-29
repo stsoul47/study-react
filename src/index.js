@@ -6,11 +6,27 @@ import 'antd/dist/antd.min.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
+//redux : S
+import { Provider } from 'react-redux';
+import { applyMiddleware } from 'redux';
+import { legacy_createStore as createStore} from 'redux'
+import { createLogger } from 'redux-logger';
+import { composeWithDevTools } from 'redux-devtools-extension';
+import rootReducer from './reducers/config';
+
+//redux: E
+
 const root = ReactDOM.createRoot(document.getElementById('root'));
+const logger =createLogger();
+const store = createStore(rootReducer, composeWithDevTools(applyMiddleware(logger)));
+
+
 root.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>
+  <Provider store={store}>
+    <React.StrictMode>
+      <App />
+    </React.StrictMode>
+  </Provider>
 );
 
 // If you want to start measuring performance in your app, pass a function
