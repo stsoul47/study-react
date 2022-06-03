@@ -1,5 +1,9 @@
 # Todo
 
+## web
+1. 반응형 웹 만들기
+2. 
+
 ## React
 1. 여러 컴포넌트 제작(Button, Input 등등)
 2. react config파일 관리
