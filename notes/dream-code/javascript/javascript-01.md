@@ -1,4 +1,4 @@
-# Javascript란?
+# javascript - 01(Javascript란?)
 
 ## API
 Application Programming Interface의 약자

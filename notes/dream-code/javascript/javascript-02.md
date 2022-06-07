@@ -1,4 +1,4 @@
-# Javascript-02
+# Javascript - 02
 
 ## 프로그래밍에서 가장 중요한 것은?
 입력, 연산, 출력 <br>
