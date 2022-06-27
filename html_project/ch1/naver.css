@@ -1,0 +1,29 @@
+#header-center{
+  margin: 0 auto;
+  width: 1080px;
+}
+
+/* div는 생략 가능
+  자식을 찾는 선택자
+*/
+div#header-search > h1 {
+  width: 280px;
+  display: inline-block;
+}
+
+#header-search h2 {
+  display: none; /* 존재는 하지만 화면상으로 안보이게 하기 위해서 */
+}
+
+#header-search fieldset {
+  width: 520px;
+  display: inline-block;
+}
+
+/* 자손을 찾는 방법도 있음
+  한칸을 띄우고 선택자를 찾으면 header-search아래의 자손(자식 + 손자)의 h1은 모두 찾음
+*/
+/* #header-search h1 {
+
+} */
+
