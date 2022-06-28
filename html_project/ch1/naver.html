@@ -9,23 +9,47 @@
 </head>
 <body>
   <header>
-    <div id="header-center"> <!-- 가운데 정렬용 -->
+    <div id="header"> <!-- 가운데 정렬용 -->
       <!-- 속성명: 속성값; 속성명2: 속성값2; -->
       <!-- 인라인 스타일 -->
-      <div>
-        <span>네이버를 시작페이지로</span>
-        <span>쥬니어네이버</span>
-        <span>해피빈</span>
-      </div>
-      <div id="header-search">
-        <h1><a href="https://www.naver.com">네이버</a></h1>
-        <!-- 네이버 검색 창 -->
-        <h2>검색창</h2>
-        <fieldset>
-          <legend>검색</legend>
-          <input />
-          <button>검색</button>
-        </fieldset>
+      <div class="special_bg"> <!-- 반응형 웹을 위한 공간 -->
+        <div class="group_flex">
+          <div class="service_area">
+            <a href="#" id="NM_set_home_btn" class="link_set">네이버를 시작페이지로</a>
+            <i class="sa_bar"></i>
+            <a href="#" class="link_jrnaver">
+              <i class="icon_jrnaver"></i>
+              <span class="blind">쥬니어네이버</span>
+            </a>
+          </div>
+          <div id="header-search" class="logo_area">
+            <h1 class="logo_default"><a href="https://www.naver.com" class="logo_naver"><span class="blind">네이버</span></a></h1>
+            <!-- 네이버 검색 창 -->  
+          </div>
+          <div id="search" class="search_area">
+            <h2 class="blind">검색창</h2>
+            <form id="sform" name="sform" method="get" role="search">
+              <fieldset>
+                <legend class="blind">검색</legend>
+                <!-- <input /> -->
+                <div class="green_window">
+                  <input type="text" 
+                    title="검색어 입력" 
+                    maxlength="255" 
+                    class="input_text" 
+                    tabindex="1" 
+                    autocomplete="off"
+                    placeholder="검색어를 입력해 주세요"
+                    accesskey="s">
+                </div>
+                <button id="search_btn" class="btn_submit" title="검색" tabindex="3" type="submit">
+                  <span class="blind">검색</span>
+                  <span class="ico_search_submit"></span>
+                </button>
+              </fieldset>
+            </form>
+          </div>
+        </div>
       </div>
     </div>
   </header>
