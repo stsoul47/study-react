@@ -27,13 +27,22 @@ a {
   width: 1080px;
 }
 
+/*
+  #header를 사용하는 이유 => div 태그를 의미론적으로 header로 묶는 의미도 있고, 
+  아이디 값으로 header를 사용해서 한테두리로 묶기 편함
+
+  .special_bg는 header의 공간을 묶어주는 역할
+*/
 #header .special_bg {
   position: relative;
   height: 160px;
   background-color: #fff;
-  border-bottom: 1px solid #e4e8eb;
+  border-bottom: 1px solid #e4e8eb; /* 아래 밑 줄 <hr>와 같은 밑줄을 보여줌 */
 }
 
+/* service_area는 service 공간을 구현
+  
+ */
 #header .service_area {
     position: absolute;
     top: 12px;
