@@ -22,6 +22,10 @@ a {
   text-decoration: none;
 }
 
+ol, ul {
+  list-style: none;
+}
+
 #header-center{
   margin: 0 auto;
   width: 1080px;
@@ -203,6 +207,65 @@ a {
 /* #header-search h1 {
 
 } */
+
+#gnb{ /* 메뉴 꾸미기 */
+  position: relative;
+  box-shadow: 0 1px 3px 0 rgb(0 0 0 / 12%);
+}
+
+#gnb .gnb_inner {
+  position: relative;
+  width: 1130px;
+  padding: 0 30px;
+  margin: 0 auto;
+}
+
+#gnb .group_nav {
+  overflow: hidden;
+  position: relative;
+  padding: 11px 270px 11px 0;
+}
+
+#gnb .list_nav {
+  float: left;
+  font-size: 15px;
+  line-height: 30px;
+  font-weight: 700;
+  color: #000;
+  letter-spacing: -.3px;
+}
+
+#gnb .list_nav::after {
+  content:"";
+  display: table;
+  table-layout: fixed;
+  clear: both;
+}
+
+#gnb .list_nav .nav_item {
+  float: left;
+}
+
+#gnb .list_nav.type_fix .nav {
+  color: #03c75a;
+}
+
+#gnb .list_nav .nav {
+  display: block;
+  text-decoration: none;
+}
+
+#gnb .list_nav .ico_mail {
+  display: inline-block;
+  width: 21px;
+  height: 21px;
+  background-image: url(../assets/images/sp_naver.png);
+  background-size: 457px 434px;
+  background-position: -420px -73px;
+  background-repeat: no-repeat;
+  vertical-align: top;
+  margin: 3px 9px 0 0;
+}
 
 .blind {
   position: absolute;
