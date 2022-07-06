@@ -6,6 +6,7 @@ import ButtonHome from './pages/button';
 import Counter from './pages/count';
 import Dashboard from './pages/dashboard';
 import InputHome from './pages/input/index';
+import Login from './pages/login/Login'
 
 /* router: E */
 
@@ -21,6 +22,7 @@ class App extends Component {
           <Route path="/input" element={<InputHome />}/>
           <Route path="/" exact element={<Dashboard />}/>
           <Route path="/count" element={<Counter />}/>
+          <Route path="/login" element={<Login />}/>
         </Routes>
       </BrowserRouter>
       </div>
