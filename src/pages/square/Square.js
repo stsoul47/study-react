@@ -1,5 +1,7 @@
-import React, {Component} from 'react';
-import log from '../../common/Log';
+// import React, {Component} from 'react';
+// import log from '../../common/Log';
+import React from 'react';
+
 // class Square extends Component {
 //   constructor(props) {
 //     super(props);
@@ -16,9 +18,7 @@ import log from '../../common/Log';
 //   render() {
 //     return (
 //       <button className='square' onClick={this.squareClick}> 
-//       {/* <button className='square' onClick={props.onClick}> */}
 //         {this.state.value}
-//         {/* {props.value} */}
 //       </button>
 //     )
 //   }
