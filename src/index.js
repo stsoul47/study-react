@@ -5,6 +5,7 @@ import './index.css';
 import 'antd/dist/antd.min.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import { BrowserRouter } from 'react-router-dom';
 
 //redux : S
 import { Provider } from 'react-redux';
@@ -24,7 +25,9 @@ const store = createStore(rootReducer, composeWithDevTools(applyMiddleware(logge
 root.render(
   <Provider store={store}>
     <React.StrictMode>
-      <App />
+      <BrowserRouter>
+        <App />
+      </BrowserRouter>
     </React.StrictMode>
   </Provider>
 );

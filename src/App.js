@@ -1,5 +1,7 @@
 import React, {Component} from 'react';
-import { BrowserRouter, Routes, Route, Outlet } from 'react-router-dom';
+import { Routes, Route } from 'react-router-dom';
+import Layout from './component/layout/Layout';
+import NotFound from './component/layout/NotFound';
 
 /* router: S */
 import ButtonHome from './pages/button';
@@ -16,18 +18,17 @@ import Game from './pages/square/Game';
 class App extends Component {
   render(){
     return (
-      <div>
-        <BrowserRouter>
-        <Routes>
+      <Routes>
+        <Route path="/" element={<Layout/>}>
+          <Route index element={<Dashboard />}/>
           <Route path="/button" element={<ButtonHome />}/>
           <Route path="/input" element={<InputHome />}/>
-          <Route path="/" exact element={<Dashboard />}/>
           <Route path="/count" element={<Counter />}/>
-          <Route path="/login" element={<Login />}/>
-          <Route path="/game" element={<Game/>}/>
-        </Routes>
-      </BrowserRouter>
-      </div>
+          <Route path="/game" element={<Game/>}/> 
+        </Route>
+        <Route path="/login" element={<Login />}/>
+        <Route path='*' element={<NotFound />} />
+      </Routes>
     )
   }
 }

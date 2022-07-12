@@ -83,7 +83,7 @@ class Login extends Component {
     try {
       const user = await fetchLogin(userAccount); //입력 받은 데이터가 실제 서버에 존재하는지 확인
 
-      // console.log("[Login Class] user response ===> ", user);
+      console.log("[Login Class] user response ===> ", user);
     } catch (error) {
       window.alert(error);
     }
