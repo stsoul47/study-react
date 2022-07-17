@@ -7,7 +7,7 @@ const RouteGuard = (props) => {
   const location = useLocation();
 
   return isLoggedIn ? (
-    <>{children}</> ) : (
+    <>{ children }</> ) : (
       <Navigate 
       replace={true}
       to="/login"
