@@ -3,7 +3,9 @@ import { Navigate, useLocation } from "react-router-dom";
 const RouteGuard = (props) => {
   const { children } = props;
 
-  const isLoggedIn = localStorage.getItem('logged_user') !== null;
+  // const isLoggedIn = localStorage.getItem('logged_user') !== null;
+  const isLoggedIn = localStorage.getItem('logged_user') === null;
+
   const location = useLocation();
 
   return isLoggedIn ? (
